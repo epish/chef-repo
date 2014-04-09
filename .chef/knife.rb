@@ -17,6 +17,8 @@ knife[:aws_access_key_id]       = ENV['AWS_ACCESS_KEY_ID']
 knife[:aws_secret_access_key]   = ENV['AWS_SECRET_ACCESS_KEY']
 knife[:region]                  = ENV['AWS_DEFAULT_REGION']
 knife[:aws_ssh_key_id]          = "aws-key1"
-knife[:flavor]                  = "t1-micro"
+knife[:flavor]                  = "t1.micro"
 knife[:image]                   = "ami-660c3023"
-
+knife[:groups]                  = "default"
+knife[:ssh_user]                = "ubuntu"
+knife[:use_sudo]                = "true"
