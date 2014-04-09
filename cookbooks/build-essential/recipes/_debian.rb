@@ -17,6 +17,10 @@
 # limitations under the License.
 #
 
+execute "apt-get update" do
+  action :nothing
+end.run_action(:run)
+
 potentially_at_compile_time do
   package 'autoconf'
   package 'binutils-doc'

@@ -1,0 +1,19 @@
+{
+  "name": "phpapp",
+  "description": "",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+    "phpapp": {
+      "db_password": "212b09752d173876a84d374333ae1ffe"
+    }
+  },
+  "override_attributes": {
+  },
+  "chef_type": "role",
+  "run_list": [
+    "recipe[apt]",
+    "recipe[phpapp]"
+  ],
+  "env_run_lists": {
+  }
+}
